@@ -1,0 +1,68 @@
+<!doctypeHTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+	<link href="css/reset.css" rel="stylesheet" /><!-- Style sheet ro reset browser  default styles -->
+	<link href="css/styles.css" rel="stylesheet" /><!-- Style sheet for styles that are shared between all pages -->
+	<link href="css/order.css" rel="stylesheet" /><!-- Style sheet for the order page -->
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"><!-- link to google fonts -->
+	<script src="js/order.js" async></script><!-- links JavaScript that totals the order -->
+	<link rel="shortcut icon" href="imgs/pizzaGuyIcon.ico" />
+	<title>Order</title>
+</head>
+<body>
+	<header>
+		<img id="logo" src="imgs/header_logo.png" alt="pizza logo" /> <!-- page logo -->
+		<nav id="hNav"><!-- Start of nav list linking to other pages -->
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="location.html">Location</a></li>
+			</ul>
+		</nav><!-- End of nav list -->
+	</header>
+	<section>
+		<h1>Place Your Order!</h1>
+		<p><strong>Check the dishes you would like!</strong></p>
+		<div id="total"></div><!-- Displays price when order is totaled -->
+		<hr>
+		<form id="orderForm" name="orderForm">
+			<fieldset id="sides"><!-- Creates order options for "sides" -->
+				<label>Sides</label><br>
+				<input type="checkbox" id="salad" name="gardenSalad" value="12.99">Garden Salad($12.99)<br>
+
+				<input type="checkbox" id="bread" name="breadSticks" value="8.99">Bread Sticks($8.99)<br>
+				
+				<input type="checkbox" id="knots" name="garlicKnots" value="9.99">Garlick Knots($9.99)<br>
+				
+			</fieldset>
+			<fieldset id="chicken"><!-- Creates order options for "chicken" -->
+				<label>Chicken</label><br>
+				<input type="checkbox" id="parmHero" name="chickenParmHero" value="16.99">Chicken Parm Hero($16.99)<br>
+				
+				<input type="checkbox" id="wings" name="chickenWings" value="11.99">Chicken Wings($11.99)<br>
+				
+				<input type="checkbox" id="marsala" name="chickenMarsala" value="16.99">Chicken Marsala($16.99)<br>
+				
+			</fieldset>
+			<fieldset id="pizza"><!-- Creates order options for "pizza" -->
+				<label>Pizza</label><br>
+
+				<input type="checkbox" id="cheese" name="cheesePizza" value="15.99">Cheese Pizza($15.99)<br>
+				
+				<input type="checkbox" id="bbq" name="bbqPizza" value="17.99">BBQ Pizza($17.99)<br>
+				
+				<input type="checkbox" id="bacon" name="baconPizza" value="17.99">Chicken & Bacon Pizza($17.99)<br>
+				
+			</fieldset>
+		</form>
+		<div id="button">Place Order</div><!-- Button to begin the function to total the order -->
+		
+	</section>
+	<footer>
+		Rocco's Pizza &#8226; 926 Nicolls Dr. Brooklyn, NY &nbsp;  11210 &#8226; 718-525-4351
+	</footer>
+</body>
+</html>

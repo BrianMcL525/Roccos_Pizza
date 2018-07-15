@@ -1,0 +1,75 @@
+/* Styles that are shared between all pages and sizes */
+html {
+	background:url(../imgs/body_background.png);
+	background-size: cover;
+}
+body {
+	background-image: url(../imgs/html_background.png);
+	background-size:cover;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	box-shadow: 20px 0px 50px black, -20px 0px 50px black;
+}
+/*Header styles*/
+header {
+	background:url(../imgs/header_background.png);
+	background-size:cover;
+}
+#logo {
+	margin-left:33%;
+	width:50%;
+}
+/* nav styles*/
+#hNav {
+	background-image:url(../imgs/nav_background.png);
+	background-size: cover;
+	height:10%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom:25px;
+}
+nav#hNav ul {
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	font-family: 'Italianno', cursive;
+}
+#hNav li a {
+	color:white;
+	font-size: 1.5em;
+	transition: color 2.5s;
+	line-height:1.5em
+}
+#hNav li a:hover {
+	color:lime;
+}
+
+/*footer styles*/
+footer {
+	background-image:url(../imgs/nav_background.png);
+	text-align:center;
+	font-family: 'Italianno', cursive;
+	color:white;
+}
+/*Styles the horizontal line*/
+hr {
+    overflow: visible; 
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+	width: 30%;
+}
+hr:before { 
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}

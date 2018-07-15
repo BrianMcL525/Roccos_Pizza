@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* Body Styles */
+#story {
+	margin-top:10%;
+	text-align:center;
+	font-family: 'Italianno', cursive;
+	font-size:4em;
+	color:green;
+
+}
+article { 
+	display:block;
+}
+
+section{
+	background-image:url(../imgs/nav_background.png);
+	display:inline-block;
+	float:left;
+	clear:right;
+	width:25%;
+	border: 2px double green;
+	color:white;
+	border-radius: 50px;
+	padding: 15px 15px;
+	margin:5% 4.16% 10% 4.16%;
+	box-shadow: 5px 5px 10px rgba(0, 102, 34, .8);
+	font-size:1.2em;
+	line-height:1.2em;
+}
+
+article::after { /*fixes contatiner collapse*/
+	clear:both;
+	content: "";
+	display:table;
+}
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+@media screen and (max-width: 480px) {
+	nav {
+		font-size: .8em;
+	}
+	body {
+		width:100%;
+		overflow: scroll;
+	}
+	section{
+		background-image:url(../imgs/nav_background.png);
+		border: 2px double green;
+		color:white;
+		border-radius: 50px;
+		padding: 15px 15px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 5%;
+		width:80%;
+	}
+	hr {
+		overflow: visible;
+		height: 30px;
+		border-style: solid;
+		border-color: black;
+		border-width: 1px 0 0 0;
+		border-radius: 20px;
+		width: 50%;
+	}
+}
+/* ============================================
+	Tablet Devices: 481px -1300px  
+   ============================================
+*/
+@media screen and (max-width: 1300px) {
+	section{
+		background-image:url(../imgs/nav_background.png);
+		border: 2px double green;
+		color:white;
+		border-radius: 50px;
+		padding: 15px 15px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 5%;
+		width:80%;
+	}
+		body {
+		overflow: scroll;
+	}
+}
+	
+	

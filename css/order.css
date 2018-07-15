@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*body styles*/
+
+h1, p, #total{
+	text-align:center;
+	font-size:2em;
+	padding: 7px 5px;
+	font-family: 'Italianno', cursive;
+	color:green;
+}
+h1 {
+	margin-bottom:2%;
+	font-size:4em;
+	margin-top:10%;
+}
+fieldset {
+	display:block;
+	float:left;
+	background-image:url(../imgs/nav_background.png);
+	color: white;
+	width:29%;
+	text-align:center;
+	line-height:2em;
+	margin: 4% 0% 2% 1.2%;
+	border: 2px double green;
+	border-radius: 50px;
+	box-shadow: 5px 5px 5px rgba(0, 102, 34, .8);
+}
+#button {
+    display:block;
+	clear:both;
+    color:white;
+    background:green;
+    vertical-align:middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+	margin: 5% auto;
+	font-family: 'Italianno', cursive;
+	font-size:1.5em;
+	border-radius: 35%;
+}
+
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+@media screen and (max-width: 480px) {
+	nav {
+		font-size: .8em;
+	}
+	body {
+		width:100%;
+	}
+	fieldset{
+		line-height:1.2em;
+		font-size:0.9em;
+		display:block;
+		clear:both;
+		width:70%;
+		margin-left:7.5%;
+		margin-right:7.5%;
+	}
+	h1, p {
+		line-height:1.2em;
+	}
+	button {
+		width:70%;
+	}
+}
+/* ============================================
+	Tablet Devices: 481px -1300px  
+   ============================================
+*/
+@media screen and (max-width: 1300px ) {
+	fieldset{
+		display:block;
+		clear:both;
+		width:70%;
+		margin-left:10%;
+		font-size: 1.3em;
+		text-align:center;
+		line-height: 1.2em;
+	}
+
+	h1, p, #total{
+		line-height:1.2em;
+	}
+}
+	
+	

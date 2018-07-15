@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*Body Styles*/
+
+#map {
+	display:block;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	margin-top: 4%;
+	border: 2px double green;
+	box-shadow: 7px 10px 10px #b30000;
+}
+
+address {
+	background-image:url(../imgs/nav_background.png);
+	border: 2px double green;
+	color:white;
+	border-radius: 50px;
+	padding: 15px 15px;
+	display:block;
+	float: right;
+	clear:left;
+	line-height:1.3em;
+	font-size: 2em;
+	margin-right:15%;
+	margin-top:4%;
+	text-align:center;
+	width:30%;
+	box-shadow: 5px 5px 5px rgba(0, 102, 34, .8);
+}
+#social_media {
+	float:right;
+	clear:both;
+	margin-right:25%;
+	margin-left:25%;
+	margin-top:-4%;
+}
+address a {
+	color:lime;
+}
+	
+/* =========================
+   Mobile Styles: 0 to 480px 
+   =========================
+*/
+@media screen and (max-width: 480px) {
+	nav {
+		font-size: .8em;
+	}
+	body {
+		width:100%;
+	}
+	address a{
+		font-size:0.65em;
+	}
+	address {
+		padding: 20px 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-bottom: 5%;
+		font-size:1.1em;
+		width:90%;
+	}
+	#map {
+		margin-left: auto;
+		margin-right:auto;
+		margin-top:5%;
+		margin-bottom: 25%;
+		margin-top: 4%;
+		height:40vh;
+		width:90vw;
+	}
+}
+/* ============================================
+	Tablet Devices: 481px -1300px  
+   ============================================
+*/
+@media screen and (min-width: 481px) {
+	address{
+		padding: 15px 15px;
+		margin-left: 10%;
+		margin-right: 10%%;
+		margin-bottom: 5%;
+		font-size: 1.2em;
+		width:70%;
+	}
+	#map {
+	
+		margin-left: auto;
+		margin-right:auto;
+		margin-top:10%;
+		margin-bottom: 25%;
+		margin-top: 4%;
+		height:50vh;
+		width:50vw;
+	}
+
+}
+/* ============================================
+	Desktop: 1301 + px  
+   ============================================
+*/
+@media screen and (min-width: 1300px) {
+
+	address {
+		line-height:1.4em;
+		font-size: 1.7em;
+		margin-right:15%;
+		margin-top:6%;
+		width: 30%;
+	}
+	address a {
+		font-size: .9em;
+	}
+	#map {
+		margin-top: 6%;
+		margin-bottom:5%;
+		margin-left:10%;
+		height:50vh;
+		width:25vw;
+	}
+}

@@ -1,0 +1,55 @@
+<!doctypeHTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+	<link href="css/reset.css" rel="stylesheet" /><!-- Style sheet ro reset browser  default styles -->
+	<link href="css/styles.css" rel="stylesheet" /><!-- Style sheet for styles that are shared between all pages -->
+	<link href="css/menu.css" rel="stylesheet" /><!-- Style sheet for the menu page -->
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"><!-- link to google fonts -->
+	<link rel="shortcut icon" href="imgs/pizzaGuyIcon.ico" />
+	<script src ="js/menu.js" async></script> <!-- Links JavaScript to change pictures -->
+	<title>Menu</title>
+</head>
+<body>
+	<header>
+		<img id="logo" src="imgs/header_logo.png" alt="pizza logo" /><!-- page logo -->
+		<nav id="hNav"><!-- Start of nav list linking to other pages -->
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="location.html">Location</a></li>
+			</ul>
+		</nav><!-- End of nav list -->
+	</header>
+	<article>
+		<h1>Menu</h1>
+		<hr/>
+		<section id="sides"> <!-- Section displaying all "sides" items -->
+			<h3>Sides</h3><br />
+			<p>Garden Salad: $12.99</p><br />
+			<p>Bread Sticks: $8.99</p><br />
+			<p>Garlic Knots(12): $9.99</p>
+		</section>
+		<div id="side_pics"><img class= 'pics' src='imgs/sides1.png' alt='sides' /></div> <!-- image of salad -->
+		<section id="chicken"><!-- Section displaying all "chicken" items -->
+			<h3>Chicken</h3><br />
+			<p>Chicken Parm Hero: $16.99</p><br />
+			<p>Chicken Wings(10): $11.99</p><br />
+			<p>Chicken Marsala: $16.99</p>
+		</section>
+		<div id="chicken_pics"><img class= 'pics' src='imgs/chicken1.png' alt='chicken' /></div><!-- image of hero -->
+		<section id="pizza"><!-- Section displaying all "pizza" items -->
+			<h3>Pizza</h3><br />
+			<p>Cheese Pizza: $15.99</p><br />
+			<p>BBQ Pizza: $17.99</p><br />
+			<p>Chicken & Bacon Pizza: $17.99</p>
+		</section>
+		<div id="pizza_pics"><img class= 'pics' src='imgs/pizza1.png' alt='pizza' /></div><!-- image of pizza -->
+	</article>
+	<footer>
+		Rocco's Pizza &#8226; 926 Nicolls Dr. Brooklyn, NY &nbsp;  11210 &#8226; 718-525-4351
+	</footer>
+</body>
+</html>

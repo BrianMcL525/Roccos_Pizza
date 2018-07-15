@@ -1,0 +1,44 @@
+<!doctypeHTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+	<link href="css/reset.css" rel="stylesheet" /><!-- Style sheet ro reset browser  default styles -->
+	<link href="css/styles.css" rel="stylesheet" /><!-- Style sheet for styles that are shared between all pages -->
+	<link href="css/location.css" rel="stylesheet" /><!-- Style sheet for the location page -->
+	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet"><!-- link to google fonts -->
+	<script src="js/location.js" defer></script><!--links JavaScript to display the map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP1URq2pVcnwgSjt536SXZ2zY_fgkKfmg&callback=myMap" defer></script><!--Link to contact googleMaps API -->
+	<link rel="shortcut icon" href="imgs/pizzaGuyIcon.ico" />
+	<title>Location</title>
+</head>
+<body>
+	<header>
+		<img id="logo" src="imgs/header_logo.png" alt="pizza logo" /><!-- page logo -->
+		<nav id="hNav"><!-- Start of nav list linking to other pages -->
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="order.html">Order</a></li>
+				<li><a href="location.html">Location</a></li>
+			</ul>
+		</nav><!-- End of nav list -->
+	</header>
+		<address><!-- Shows location information -->
+			<strong>Rocco's Pizza</strong><br />
+			926 Nicolls Dr.<br />
+			Brooklyn, NY 11210 <br />
+			email:<a href="mailto:pizza@example.com">pizza@test.com</a><br /> <!-- Provides a hyperlink to email -->
+			phone:<a href="tel:+17185254351">718.525.4351</a><!-- Provides a hyperlink to call -->
+		</address>
+		<div id= "social_media">
+		<a href="#"><img src="imgs/facebook.png" alt="facebook"class= "social" /></a>
+		<a href="#"><img src="imgs/twitter.png" alt="twitter" class= "social"/></a>
+		<a href="#"><img src="imgs/instagram.png" alt="instagram" class= "social"/></a>
+		</div>
+	<div id="map" ></div><!-- Where the map is displayed -->
+	<footer>
+		Rocco's Pizza &#8226; 926 Nicolls Dr. Brooklyn, NY &nbsp;  11210 &#8226; 718-525-4351
+	</footer>
+</body>
+</html>
